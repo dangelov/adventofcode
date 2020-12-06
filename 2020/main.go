@@ -5,6 +5,7 @@ import (
 	"log"
 
 	"dangelov.com/adventofcode/2020/day1"
+	"dangelov.com/adventofcode/2020/day2"
 )
 
 func main() {
@@ -24,4 +25,16 @@ func main() {
 	println(day1.SolvePart1(input))
 	print("Day 1, Part 2: ")
 	println(day1.SolvePart2(input))
+
+	// # Day 2
+	content, err = ioutil.ReadFile("day2-part1.input")
+	if err != nil {
+		log.Fatal(err)
+	}
+	input = string(content)
+
+	print("Day 2, Part 1: ")
+	println(day2.SolvePart1(input))
+	print("Day 2, Part 2: ")
+	println(day2.SolvePart2(input))
 }
