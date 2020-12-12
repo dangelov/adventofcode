@@ -10,6 +10,7 @@ import (
 	"dangelov.com/adventofcode/2020/day4"
 	"dangelov.com/adventofcode/2020/day5"
 	"dangelov.com/adventofcode/2020/day6"
+	"dangelov.com/adventofcode/2020/day7"
 )
 
 func main() {
@@ -89,4 +90,16 @@ func main() {
 	println(day6.SolvePart1(input))
 	print("Day 6, Part 2: ")
 	println(day6.SolvePart2(input))
+
+	// # Day 7
+	content, err = ioutil.ReadFile("day7-part1.input")
+	if err != nil {
+		log.Fatal(err)
+	}
+	input = string(content)
+
+	print("Day 7, Part 1: ")
+	println(day7.SolvePart1(input))
+	print("Day 7, Part 2: ")
+	println(day7.SolvePart2(input))
 }
